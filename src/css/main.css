@@ -14,6 +14,15 @@
 
 }
 
+.line {
+    border-top: 1px solid #CCCCCC;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background: #F2F2F2;
+}
+
 .link {
     text-decoration: none;
 }
@@ -266,4 +275,147 @@
 .propouse-area-cards-signature {
     font-size: 14px;
     line-height: 19px;
+    text-align: start;
+}
+
+.ceo-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ceo-quote-title {
+    max-width: 980px;
+    padding-top: 132px;
+    margin-bottom: 19px;
+
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.ceo-quote-name {
+    padding-top: 24px;
+    margin-bottom: 132px;
+
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.get-start {
+    display: flex;
+    background-color: #F2F2F2;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-start-text {
+    margin-left: 235px;
+    margin-bottom: 75px;
+    padding-top: 75px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.get-start-text-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.get-start-text-description {
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.get-start-confirm {
+    margin-right: 235px;
+}
+
+.get-start-confirm-trial {
+    width: 200px;
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 16px;
+}
+
+.get-start-confirm-contact {
+    width: 200px;
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer-area {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.footer-signature {
+    margin-left: 135px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-signature-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 19px;
+}
+
+.footer-signature-year {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+
+.footer-signature-privacy {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-lists {
+    margin-bottom: 120px;
+}
+
+.footer-lists-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lists-items:first-child {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-lists-items{ 
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.footer-lists-items:last-child {
+    margin-bottom: 0px;
+}
+
+.footer-card-space {
+    margin-right: 140px;
+}
+
+..footer-card-space:last-child {
+    margin-right: 0px;
 }
