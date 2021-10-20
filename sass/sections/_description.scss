@@ -1,0 +1,44 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $description-bg;
+    padding: 79px 0 47px;
+
+    &__title {
+        text-transform: capitalize;
+        color: $description-title;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 32px;
+        line-height: 1.2;
+
+        @media screen and (max-width: 414px) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        max-width: 506px;
+        text-align: center;
+        line-height: 1.41;
+        color: $description-text;
+        margin-bottom: 25px;
+    }
+
+    &__button {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.23;
+        width: 240px;
+        color: $description-btn-text;
+        text-transform: capitalize;
+        background-color: $description-btn-bg;
+        border: none;
+        border-radius: 5px;
+        padding: 19px 0;
+        cursor: pointer;
+    }
+}

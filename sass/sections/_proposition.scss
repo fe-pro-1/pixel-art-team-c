@@ -1,0 +1,83 @@
+.proposition {
+    background-color: #f2f2f2;
+    padding-top: 70px;
+    padding-bottom: 52px;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-transform: capitalize;
+        padding-bottom: 25px;
+        max-width: 422px;
+        margin: 0 auto;
+    }
+
+    &__descr {
+        max-width: 800px;
+        text-align: center;
+        line-height: 1.5;
+        padding-bottom: 88px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.blacksquires {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1157px) {
+        justify-content: space-evenly;
+    }
+
+    &__section {
+        @media screen and (max-width: 1157px) {
+            padding: 20px 10px;
+        }
+    }
+
+    &__section,
+    &__img-wrap {
+        line-height: 0;
+    }
+
+    &__img {
+        max-width: 370px;
+        max-height: 404px;
+        object-fit: cover;
+        width: 100%;
+        padding-bottom: 34px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 1.38;
+        max-width: 370px;
+        padding-bottom: 12px;
+
+        @media screen and (max-width: 450px) {
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.45;
+        padding-bottom: 4px;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 450px) {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}

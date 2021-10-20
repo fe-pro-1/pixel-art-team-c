@@ -1,0 +1,116 @@
+.funcdescribe {
+    padding: 0;
+
+    &__wrap {
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
+        justify-content: center;
+        align-content: center;
+
+        @media screen and (max-width: 995px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__imgwrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: $imgwrap-bg;
+        padding: 122px 10px;
+        // max-width: 720px;
+        width: 100%;
+
+        &--red {
+            background-color: $imgwrap-bg-red;
+        }
+
+        &--orange {
+            background-color: $imgwrap-bg-orange;
+        }
+
+        &--yellow {
+            background-color: $imgwrap-bg-yellow;
+        }
+    }
+
+    &__imgwrap--2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        @media screen and (max-width: 995px) {
+            grid-column: 1;
+            grid-row: 3;
+        }
+    }
+
+    &__img {
+        display: flex;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .wrapper {
+        @media screen and (max-width: 995px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__textblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 181px 10px;
+        // max-width: 720px;
+        width: 100%;
+
+        @media screen and (max-width: 422px) {
+            padding: 122px 10px;
+        }
+
+        &--title {
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 1.42;
+            font-size: 24px;
+            margin-bottom: 40px;
+            max-width: 445px;
+
+            @media screen and (max-width: 995px) {
+                text-align: center;
+            }
+        }
+
+        &--text {
+            max-width: 422px;
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 24px;
+
+            @media screen and (max-width: 995px) {
+                text-align: center;
+            }
+        }
+
+        &--button {
+            width: 200px;
+            background-color: $funcdescribe-btn;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 1.34;
+            border: 1px solid $funcdescribe-btn-border;
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 17px 0;
+            cursor: pointer;
+        }
+    }
+}
