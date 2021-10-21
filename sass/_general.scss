@@ -1,0 +1,32 @@
+// // TODO hide scrollbar
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    color: $main-text;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1440px;
+}

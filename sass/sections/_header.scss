@@ -1,0 +1,518 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 785px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 414px) {
+        justify-content: space-between;
+    }
+}
+
+.main-nav {
+    display: flex;
+    margin-top: -3px;
+
+    &__item {
+        padding: 0 15px;
+        text-transform: capitalize;
+    }
+
+    &__item:first-child {
+        padding-left: 30px;
+    }
+
+    @media screen and (max-width: 785px) {
+        order: 1;
+        padding: 0 0 17px;
+    }
+
+    @media screen and (max-width: 414px) {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 17px 0 18px;
+    margin-right: 32px;
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 785px) {
+        order: 0;
+    }
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding-bottom: 2px;
+
+    @media screen and (max-width: 785px) {
+        order: 2;
+        padding: 0 0 17px;
+    }
+
+    @media screen and (max-width: 414px) {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .login-nav {
+        display: flex;
+
+        &__item {
+            padding: 0 16px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.signing-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.23;
+    width: 140px;
+    color: $header-button-text;
+    text-transform: capitalize;
+    background-color: $header-button-bg;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 0;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.toggle {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+    @media screen and (max-width: 414px) {
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $pricing-black;
+        height: 48px;
+        width: 48px;
+        position: fixed;
+        top: 8px;
+        right: 18px;
+        border-radius: 50%;
+        z-index: 4;
+        box-shadow: 0 1rem 3rem rgba($black, 0.1);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 22px;
+
+        &,
+        &::before,
+        &::after {
+            width: 27px;
+            height: 2px;
+            background-color: $light-pink;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -8px;
+        }
+        &::after {
+            top: 8px;
+        }
+    }
+
+    &__background {
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        background-image: radial-gradient(
+            $pricing-bottom-dark-red,
+            $pricing-bottom-light-red
+        );
+        z-index: 2;
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        opacity: 0;
+        width: 0;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    &__button:hover &__icon::before {
+        top: -10px;
+    }
+
+    &__button:hover &__icon::after {
+        top: 10px;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            font-size: 35px;
+            line-height: 1.22;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        &__link {
+            color: inherit;
+            transition: text-shadow 0.2s ease;
+
+            &:hover,
+            &:focus {
+                text-shadow: 0 0 0.4px $white, 0 0 0.4px $white;
+            }
+        }
+    }
+
+    .button {
+        @include blueButton($white, $white, $white);
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+}
+
+//******EDITOR********//
+
+.editor-logo-main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.editor-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 785px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 473px) {
+        background-color: $editor-header-bg;
+        color: $editor-header-text;
+    }
+
+    @media screen and (max-width: 414px) {
+        justify-content: space-between;
+    }
+}
+
+.editor-main-nav {
+    display: flex;
+    margin-top: -3px;
+
+    &__item {
+        padding: 0 15px;
+        text-transform: capitalize;
+    }
+
+    &__item:first-child {
+        padding-left: 30px;
+    }
+
+    @media screen and (max-width: 786px) {
+        padding: 0;
+    }
+
+    @media screen and (max-width: 414px) {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.editor-logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 17px 0 18px;
+    margin-right: 32px;
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 785px) {
+        order: 0;
+    }
+}
+
+.editor-login-section {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding-bottom: 2px;
+
+    @media screen and (max-width: 785px) {
+        order: 2;
+        padding: 0 0 17px;
+    }
+
+    @media screen and (max-width: 414px) {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .editor-login-nav {
+        display: flex;
+
+        &__item {
+            padding: 0 16px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.editor-signing-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.23;
+    width: 140px;
+    color: $header-button-text;
+    text-transform: capitalize;
+    background-color: $header-button-bg;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 0;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.editor-toggle {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+    @media screen and (max-width: 414px) {
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $editor-toggle-btn;
+        height: 48px;
+        width: 48px;
+        position: fixed;
+        top: 8px;
+        right: 18px;
+        border-radius: 50%;
+        z-index: 4;
+        box-shadow: 0 1rem 3rem rgba($black, 0.1);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 22px;
+
+        &,
+        &::before,
+        &::after {
+            width: 27px;
+            height: 2px;
+            background-color: $editor-toggle-icon;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -8px;
+        }
+        &::after {
+            top: 8px;
+        }
+    }
+
+    &__background {
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        background-image: radial-gradient(
+            $pricing-bottom-dark-red,
+            $pricing-bottom-light-red
+        );
+        z-index: 2;
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        opacity: 0;
+        width: 0;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    &__button:hover &__icon::before {
+        top: -10px;
+    }
+
+    &__button:hover &__icon::after {
+        top: 10px;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            font-size: 35px;
+            line-height: 1.22;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        &__link {
+            color: inherit;
+            transition: text-shadow 0.2s ease;
+
+            &:hover,
+            &:focus {
+                text-shadow: 0 0 0.4px $white, 0 0 0.4px $white;
+            }
+        }
+    }
+
+    .button {
+        @include blueButton($white, $white, $white);
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+}

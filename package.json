@@ -1,22 +1,29 @@
 {
-  "name": "pixel-art-team-a",
-  "version": "1.0.0",
-  "description": "Pixel Art Editor",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fe-pro-1/pixel-art-team-a.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fe-pro-1/pixel-art-team-a/issues"
-  },
-  "homepage": "https://github.com/fe-pro-1/pixel-art-team-a#readme",
-  "devDependencies": {
-    "http-server": "^13.0.2"
-  }
+    "name": "pixel-art-team-c",
+    "version": "1.0.0",
+    "description": "Pixel Art Editor",
+    "main": "index.html",
+    "type": "module",
+    "scripts": {
+        "scss": "node-sass sass/main.scss css/style.css -w --output-style expanded"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fe-pro-1/pixel-art-team-c.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fe-pro-1/pixel-art-team-c/issues"
+    },
+    "homepage": "https://github.com/fe-pro-1/pixel-art-team-c#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.15.7",
+        "@babel/core": "^7.15.8",
+        "@babel/node": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.13"
+    },
+    "dependencies": {}
 }

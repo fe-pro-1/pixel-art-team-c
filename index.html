@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <title>Pixel Art</title>
+    </head>
+    <body>
+        <header class="header container">
+            <ul class="main-nav">
+                <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link">home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="editor.html" class="main-nav__link">editor</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">library</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">account</a>
+                </li>
+            </ul>
+            <p class="logo">pixi</p>
+            <div class="login-section">
+                <ul class="login-nav">
+                    <li class="login-nav__item">
+                        <a href="#" class="login-nav__link">help</a>
+                    </li>
+                    <li class="login-nav__item">
+                        <a href="#" class="login-nav__link">login</a>
+                    </li>
+                </ul>
+                <button class="signing-btn" type="button">sign up</button>
+            </div>
+            <div class="toggle">
+                <input
+                    type="checkbox"
+                    class="toggle__checkbox"
+                    id="navi-toggle"
+                />
+                <label for="navi-toggle" class="toggle__button">
+                    <span class="toggle__icon">&nbsp;</span>
+                </label>
+                <div class="toggle__background">&nbsp;</div>
+                <div class="toggle__nav">
+                    <ul class="navigation">
+                        <li class="navigation__item">
+                            <a href="index.html" class="navigation__link">
+                                home
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="editor.html" class="navigation__link">
+                                editor
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#library" class="navigation__link">
+                                library
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#account" class="navigation__link">
+                                account
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#help" class="navigation__link"> help </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="button"> login </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="description container">
+                <h1 class="description__title">pixel art editor</h1>
+                <p class="description__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+                <button class="description__button">start creating!</button>
+            </section>
+            <section class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slide1.jpg" alt="slide1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.gif" alt="slide2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide3.jpeg" alt="slide3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide4.png" alt="slide4" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide5.png" alt="slide5" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <section class="funcdescribe container">
+                <div class="funcdescribe__wrap">
+                    <div
+                        class="funcdescribe__imgwrap funcdescribe__imgwrap--red"
+                    >
+                        <img
+                            class="funcdescribe__img"
+                            src="images/scull.jpg"
+                            alt="scull"
+                        />
+                    </div>
+                    <div class="funcdescribe__textblock">
+                        <div class="wrapper">
+                            <h2 class="funcdescribe__textblock--title">
+                                easy to use full featured pixel art editor
+                            </h2>
+                            <p class="funcdescribe__textblock--text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <button
+                                class="funcdescribe__textblock--button"
+                                type="button"
+                            >
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            funcdescribe__imgwrap
+                            funcdescribe__imgwrap--orange
+                            funcdescribe__imgwrap--2
+                        "
+                    >
+                        <img
+                            class="funcdescribe__img"
+                            src="images/fox.jpg"
+                            alt="scull"
+                        />
+                    </div>
+                    <div class="funcdescribe__textblock">
+                        <div class="wrapper">
+                            <h2 class="funcdescribe__textblock--title">
+                                Create Animation With Ease!
+                            </h2>
+                            <p class="funcdescribe__textblock--text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <button
+                                class="funcdescribe__textblock--button"
+                                type="button"
+                            >
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            funcdescribe__imgwrap funcdescribe__imgwrap--yellow
+                        "
+                    >
+                        <img
+                            class="funcdescribe__img"
+                            src="images/pickachu.jpg"
+                            alt="scull"
+                        />
+                    </div>
+                    <div class="funcdescribe__textblock">
+                        <div class="wrapper">
+                            <h2 class="funcdescribe__textblock--title">
+                                Smothly Runs On Any Mobile
+                            </h2>
+                            <p class="funcdescribe__textblock--text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <button
+                                class="funcdescribe__textblock--button"
+                                type="button"
+                            >
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="proposition container">
+                <div class="proposition__text">
+                    <h3 class="proposition__title">
+                        your best value proposition
+                    </h3>
+                    <p class="proposition__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
+                <div class="blacksquires">
+                    <div class="blacksquires__section">
+                        <img
+                            class="blacksquires__img"
+                            src="images/squire1.jpg"
+                            alt="squire1"
+                        />
+                        <p class="blacksquires__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                        </p>
+                        <div class="blacksquires__link">
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                    <div class="blacksquires__section">
+                        <div class="blacksquires__img-wrap">
+                            <img
+                                class="blacksquires__img"
+                                src="images/squire2.jpg"
+                                alt="squire2"
+                            />
+                        </div>
+                        <p class="blacksquires__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                        </p>
+                        <div class="blacksquires__link">
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                    <div class="blacksquires__section">
+                        <div class="blacksquires__img-wrap">
+                            <img
+                                class="blacksquires__img"
+                                src="images/squire3.png"
+                                alt="squire3"
+                            />
+                        </div>
+                        <p class="blacksquires__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                        </p>
+                        <div class="blacksquires__link">
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container">
+            <div class="logoterms">
+                <p class="logoterms__logo">pixi</p>
+                <p class="logoterms__year">&copy; 2010 &#8212; 2020</p>
+                <p class="logoterms__privacy">Privacy &#8212; Terms</p>
+            </div>
+            <div class="footer-lists">
+                <div class="ftr-list">
+                    <p class="ftr-list__title">Product</p>
+                    <ul class="ftr-list__wrap">
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">Product</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">Product</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">Product</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr-list">
+                    <p class="ftr-list__title">features</p>
+                    <ul class="ftr-list__wrap">
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">features</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">features</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">features</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr-list">
+                    <p class="ftr-list__title">resourses</p>
+                    <ul class="ftr-list__wrap">
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">resourses</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">resourses</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">resourses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr-list">
+                    <p class="ftr-list__title">company</p>
+                    <ul class="ftr-list__wrap">
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">company</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">company</a>
+                        </li>
+                        <li class="ftr-list__item">
+                            <a href="#" class="ftr-list__link">company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module" src="script/script.js"></script>
+</html>

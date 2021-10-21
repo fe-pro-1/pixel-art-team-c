@@ -1,0 +1,55 @@
+@mixin blueButton($visited, $hover, $active) {
+    & {
+        position: relative;
+        color: $white;
+        font-size: 18px;
+        line-height: 1.62;
+        letter-spacing: 0.08px;
+        text-transform: capitalize;
+        padding: 15px 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: $light-blue;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        transition-property: transform, box-shadow, opacity;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.4s;
+            transition-property: transform, box-shadow, opacity;
+            background-color: $light-blue;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px $buttonShadow;
+            color: $hover;
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px $buttonShadow;
+            color: $active;
+        }
+
+        &:visited {
+            color: $visited;
+        }
+    }
+}
