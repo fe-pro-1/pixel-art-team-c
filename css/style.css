@@ -1121,12 +1121,12 @@ a {
   }
 }
 
-.container {
+.field-container {
   padding-right: 50px;
 }
 
 @media screen and (max-width: 960px) {
-  .container {
+  .field-container {
     padding-right: 10px;
   }
 }
