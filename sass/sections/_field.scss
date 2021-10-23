@@ -14,6 +14,10 @@
     @media screen and (max-width: 960px) {
         padding-right: 10px;
     }
+
+    @media screen and (max-width: 400px) {
+        padding-right: 0;
+    }
 }
 
 .grid-container {
@@ -24,6 +28,10 @@
     width: 100%;
     height: 100%;
     padding: 50px 78px;
+
+    @media screen and (max-width: 400px) {
+        padding: 30px 10px;
+    }
 }
 
 .grid-container > * {
